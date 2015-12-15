@@ -37,8 +37,9 @@ bower install githubUser/repo^namespace^module^v1.0.0
 ```
 ## Usage
 
-1. Install this repo as a package.json dependency
-    * `npm install --saveDev urbn/bower-github-subdirectory-resolver`
+1. Install this repo globally
+    * `npm install -g urbn/bower-github-subdirectory-resolver`
+    * Note: This should be able to be installed as a project `devDependency` but it doesn't seem bower plys nicely with that setup as of now (i.e., `npm install --saveDev urbn/bower-github-subdirectory-resolver`)
 2. List the resolver in your `.bowerrc` file
     * `{ "resolvers": [ "bower-github-subdirectory-resolver" ] }`
 3. Install your bower subdirectory
