@@ -69,7 +69,7 @@ module.exports = function GitHubSubdirectoryResolver(/*bower*/) {
         // }
 
         cloneDir = tmp.dirSync().name;
-        githubUrl = 'git@github.com:' + owner + '/' + repo + '.git';
+        githubUrl = 'https://' + process.env.GITHUB_TOKEN + '@github.com/' + owner + '/' + repo + '.git';
 
         log('Cloning', [ 'clone', githubUrl, cloneDir ]);
 
